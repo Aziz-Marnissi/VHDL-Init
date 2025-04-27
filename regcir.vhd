@@ -5,20 +5,20 @@ entity regcir is
 		n:integer:=8
 	);
     	port (
-        -- Signaux de contrôle
+        -- Signaux de contrÃ´le
         	clk       : in  STD_LOGIC;
         	reset     : in  STD_LOGIC;
         	enable    : in  STD_LOGIC;                     -- Activation globale
         	direction : in  STD_LOGIC;                     -- '1'=droite, '0'=gauche
-        	load      : in  STD_LOGIC;                     -- Chargement parallèle
+        	load      : in  STD_LOGIC;                     -- Chargement parallÃ¨le
         
-        -- Entrées données
-        	parallel_in : in  STD_LOGIC_VECTOR(n-1 downto 0); -- Entrée parallèle
-        	serial_in   : in  STD_LOGIC;                          -- Entrée série
+        -- EntrÃ©es donnÃ©es
+        	parallel_in : in  STD_LOGIC_VECTOR(n-1 downto 0); -- EntrÃ©e parallÃ¨le
+        	serial_in   : in  STD_LOGIC;                          -- EntrÃ©e sÃ©rie
         
         -- Sorties
-        	parallel_out : out STD_LOGIC_VECTOR(n-1 downto 0); -- Sortie parallèle
-        	serial_out   : out STD_LOGIC                           -- Sortie série
+        	parallel_out : out STD_LOGIC_VECTOR(n-1 downto 0); -- Sortie parallÃ¨le
+        	serial_out   : out STD_LOGIC                           -- Sortie sÃ©rie
     );
 end regcir;
 architecture behaviour of regcir is
