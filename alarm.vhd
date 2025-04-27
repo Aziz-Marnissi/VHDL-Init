@@ -1,10 +1,11 @@
+
 library ieee;
 use ieee.std_logic_1164.all;
 
 entity alarm is
     port(
         arm    : in  std_logic;   -- Signal d'armement
-        disarm : in  std_logic;   -- Signal de désarmement
+        disarm : in  std_logic;   -- Signal de dÃ©sarmement
         capt   : in  std_logic;   -- Signal du capteur
         clk    : in  std_logic;   -- Horloge
         reset  : in  std_logic;   -- Reset asynchrone
